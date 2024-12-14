@@ -1,89 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="iProViS - Intelligent Product Vision System">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="iProViS - Intelligent Product Vision System"
+    />
     <title>iProViS - Intelligent Product Vision System</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Global Styles */
+      body {
+        font-family: "Roboto", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #121212;
+        color: #e0e0e0;
+        line-height: 1.6;
+      }
+
+      /* Header Section */
+      header {
+        background: #1f1f1f;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      header img {
+        margin-bottom: 10px;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        color: #ffffff;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        color: #bbbbbb;
+      }
+
+      /* Navigation Bar */
+      nav {
+        background: #282828;
+        text-align: center;
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+
+      nav ul li a:hover {
+        color: #00d4ff;
+        text-decoration: underline;
+      }
+
+      /* Sections */
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 2rem 0;
+        background: #1e1e1e;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      h2 {
+        color: #00d4ff;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      ul {
+        padding: 0;
+        list-style: square inside;
+      }
+
+      /* Features Section */
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+
+      .feature-card {
+        background: #2a2a2a;
+        border-radius: 8px;
+        text-align: center;
+        width: 250px;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .feature-card img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+      }
+
+      .feature-card h3 {
+        color: #00bfff;
+      }
+
+      /* About Us Section */
+      ul {
+        color: #e0e0e0;
+        font-size: 1rem;
+        text-align: center;
+        padding: 0;
+      }
+
+      ul li {
+        margin: 0.5rem 0;
+      }
+
+      /* Documents Section */
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        margin: 5px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      /* Footer */
+      footer {
+        background: #181818;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 14px;
+        border-top: 2px solid #00d4ff;
+      }
+
+      footer a {
+        color: #00d4ff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      footer a:hover {
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <img src="logo.png" alt="iProViS Logo" style="width: 150px;">
-            <h1>iProViS</h1>
-            <p>Intelligent Product Vision System</p>
-        </div>
+      <div class="container">
+        <img src="logo.png" alt="iProViS Logo" style="width: 150px" />
+        <h1>iProViS</h1>
+        <p>Intelligent Product Vision System</p>
+      </div>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#aboutus">About Us</a></li>
-            <li><a href="#documents">Documents</a></li>
-        </ul>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="#documents">Documents</a></li>
+      </ul>
     </nav>
 
     <section id="about" class="container">
-        <h2>About the Project</h2>
-        <p>iProViS is a cutting-edge product recognition system designed to provide users with detailed product information, price comparisons, recyclability insights, and more. This project aims to revolutionize shopping experiences while contributing to sustainability and eco-friendly practices.</p>
+      <h2>About the Project</h2>
+      <p>
+        iProViS is a cutting-edge product recognition system designed to provide
+        users with detailed product information, price comparisons,
+        recyclability insights, and more. This project aims to revolutionize
+        shopping experiences while contributing to sustainability and
+        eco-friendly practices.
+      </p>
     </section>
 
     <section id="features" class="container">
-        <h2>Features</h2>
-        <div class="features">
-            <div class="feature-card">
-                <img src="feature1.png" alt="Product Recognition">
-                <h3>Product Recognition</h3>
-                <p>Capture product photos to retrieve detailed information.</p>
-            </div>
-            <div class="feature-card">
-                <img src="feature2.png" alt="Price Comparison">
-                <h3>Price Comparison</h3>
-                <p>Compare prices across multiple stores in seconds.</p>
-            </div>
-            <div class="feature-card">
-                <img src="feature3.png" alt="Recyclability Information">
-                <h3>Recyclability Information</h3>
-                <p>Learn whether the product or its packaging is recyclable.</p>
-            </div>
-            <div class="feature-card">
-                <img src="feature4.png" alt="Multilingual Support">
-                <h3>Multilingual Support</h3>
-                <p>View product details in your preferred language.</p>
-            </div>
+      <h2>Features</h2>
+      <div class="features">
+        <div class="feature-card">
+          <img src="feature1.png" alt="Product Recognition" />
+          <h3>Product Recognition</h3>
+          <p>Capture product photos to retrieve detailed information.</p>
         </div>
+        <div class="feature-card">
+          <img src="feature2.png" alt="Price Comparison" />
+          <h3>Price Comparison</h3>
+          <p>Compare prices across multiple stores in seconds.</p>
+        </div>
+        <div class="feature-card">
+          <img src="feature3.png" alt="Recyclability Information" />
+          <h3>Recyclability Information</h3>
+          <p>Learn whether the product or its packaging is recyclable.</p>
+        </div>
+        <div class="feature-card">
+          <img src="feature4.png" alt="Multilingual Support" />
+          <h3>Multilingual Support</h3>
+          <p>View product details in your preferred language.</p>
+        </div>
+      </div>
     </section>
 
     <section id="aboutus" class="container">
-        <h2>About Us</h2>
-        <ul>
-            <li>Boran GÜLBAŞAR</li>
-            <li>Tamer MEMİŞ</li>
-            <li>Nursena BİTİRGEN</li>
-            <li>Furkan YAMANER</li>
-        </ul>
+      <h2>About Us</h2>
+      <ul>
+        <li>Boran GÜLBAŞAR</li>
+        <li>Tamer MEMİŞ</li>
+        <li>Nursena BİTİRGEN</li>
+        <li>Furkan YAMANER</li>
+      </ul>
     </section>
 
     <section id="documents" class="container">
-        <h2>Documents</h2>
-        <p>Access the related project documents:</p>
-        <button onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/Literature-Review-(LR)'">Literature Review</button>
-        <button onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/Project-Work-Plan-(PWP)'">Project Work Plan</button>
-        <button onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/SRS-Document'">SRS Document</button>
+      <h2>Documents</h2>
+      <p>Access the related project documents:</p>
+      <button
+        onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/Literature-Review-(LR)'"
+      >
+        Literature Review
+      </button>
+      <button
+        onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/Project-Work-Plan-(PWP)'"
+      >
+        Project Work Plan
+      </button>
+      <button
+        onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/SRS-Document'"
+      >
+        SRS Document
+      </button>
     </section>
 
     <footer>
-        <div class="container" style="background-color: #333; color: #fff; text-align: center; padding: 10px 0; font-size: 14px; border-top: 2px solid #007BFF;">
-    <p>© 2024 iProViS | 
-        <a href="https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System" 
-           style="color: #007BFF; text-decoration: none; font-weight: bold;">GitHub Repository</a>
-    </p>
-</div>
-
+      <div class="container">
+        <p>
+          © 2024 iProViS |
+          <a
+            href="https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System"
+            >GitHub Repository</a
+          >
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
