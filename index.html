@@ -178,6 +178,13 @@
       footer a:hover {
         color: #ffffff;
       }
+      .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
     </style>
   </head>
   <body>
@@ -199,14 +206,36 @@
     </nav>
 
     <section id="about" class="container">
-      <h2>About the Project</h2>
-      <p>
-        iProViS is a cutting-edge product recognition system designed to provide
-        users with detailed product information, price comparisons,
-        recyclability insights, and more. This project aims to revolutionize
-        shopping experiences while contributing to sustainability and
-        eco-friendly practices.
-      </p>
+      <div class="container">
+        <h2>About the Project</h2>
+        <p>
+          iProViS (Intelligent Product Vision System) is an innovative solution
+          designed to revolutionize the way users interact with everyday
+          products. Leveraging advanced computer vision and artificial
+          intelligence, the application enables users to retrieve detailed
+          product information simply by taking a photo. Whether you’re shopping
+          in a supermarket, comparing prices online, or checking for
+          eco-friendly packaging, iProViS brings all the essential information
+          to your fingertips.
+        </p>
+        <p>
+          The app provides comprehensive details, including current prices,
+          stock availability, and price comparisons across multiple stores, both
+          online and offline. Additionally, iProViS promotes environmental
+          awareness by offering insights into the recyclability of products and
+          their packaging. With multilingual support, users from diverse
+          linguistic backgrounds can access product details seamlessly in their
+          preferred language.
+        </p>
+        <p>
+          By combining cutting-edge technology with user-friendly features,
+          iProViS enhances the shopping experience while contributing to
+          sustainable and eco-conscious consumption. Whether you are a savvy
+          shopper looking for the best deals or an environmentally conscious
+          user seeking greener alternatives, iProViS empowers you to make
+          informed decisions with ease and confidence.
+        </p>
+      </div>
     </section>
 
     <section id="features" class="container">
@@ -215,22 +244,60 @@
         <div class="feature-card">
           <img src="feature1.png" alt="Product Recognition" />
           <h3>Product Recognition</h3>
-          <p>Capture product photos to retrieve detailed information.</p>
+          <p>
+            This project aims to revolutionize the retail experience by
+            leveraging computer vision and deep learning technologies to replace
+            traditional barcodes and QR codes for product recognition in sectors
+            such as supermarkets, clothing, food, and electronics. The developed
+            system addresses multiple consumer needs, including effortless
+            access to product price information, comparative price analysis
+            across stores, and multilingual support for accessing detailed
+            product content information.
+          </p>
         </div>
         <div class="feature-card">
           <img src="feature2.png" alt="Price Comparison" />
           <h3>Price Comparison</h3>
-          <p>Compare prices across multiple stores in seconds.</p>
+          <p>
+            With İProViS, the "Price Comparison" feature enables users to
+            compare product prices across sources in an easy way. Utilizing
+            computer vision, it can scan a product's barcode or analyze its
+            image for instant retrieval of pricing from online stores or
+            physical retailers. This feature allows users to find the best deals
+            to make their shopping fast and efficient. Users can now make
+            budget-friendly decisions using real-time price analysis.
+          </p>
         </div>
         <div class="feature-card">
           <img src="feature3.png" alt="Recyclability Information" />
           <h3>Recyclability Information</h3>
-          <p>Learn whether the product or its packaging is recyclable.</p>
+          <p>
+            The product is designed as a standalone mobile application
+            integrated with the iPRoVis system's API for advanced functionality.
+            This integration enables not only product identification but also
+            facilitates an intelligent recycling process by recognizing
+            recyclable packaging types, determining whether the packaging is
+            empty or full, and providing weight details. This functionality
+            ensures efficient sorting and recognition by smart recycling
+            machines, thereby reducing the time and effort required for waste
+            disposal and recycling.
+          </p>
         </div>
         <div class="feature-card">
           <img src="feature4.png" alt="Multilingual Support" />
           <h3>Multilingual Support</h3>
-          <p>View product details in your preferred language.</p>
+          <p>
+            İProViS’s Multilingual feature makes it easier for users across the
+            globe as it provides support for more than one language. This
+            feature allows the software to read product details, labels, and
+            pricing in other languages employing state of the art computer
+            vision and natural language processing (NLP) technologies. Customers
+            can communicate with the application in their language of choice,
+            therefore improving the function and usefulness of the software.
+            Whether you’re purchasing items from a local store or ordering from
+            abroad, İProVis changes according to the languages you required,
+            hence it becomes a universal shopping assistant.
+          </p>
         </div>
       </div>
     </section>
@@ -246,23 +313,25 @@
     </section>
 
     <section id="documents" class="container">
-      <h2>Documents</h2>
-      <p>Access the related project documents:</p>
-      <button
-        onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/Literature-Review-(LR)'"
-      >
-        Literature Review
-      </button>
-      <button
-        onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/Project-Work-Plan-(PWP)'"
-      >
-        Project Work Plan
-      </button>
-      <button
-        onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/SRS-Document'"
-      >
-        SRS Document
-      </button>
+      <div class="container" class="vertical-center">
+        <h2>Documents</h2>
+        <p>Access the related project documents:</p>
+        <button
+          onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/Literature-Review-(LR)'"
+        >
+          Literature Review
+        </button>
+        <button
+          onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/Project-Work-Plan-(PWP)'"
+        >
+          Project Work Plan
+        </button>
+        <button
+          onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/SRS-Document'"
+        >
+          SRS Document
+        </button>
+      </div>
     </section>
 
     <footer>
