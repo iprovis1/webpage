@@ -178,13 +178,41 @@
       footer a:hover {
         color: #ffffff;
       }
-      .vertical-center {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-      }
+
+      <!--asdasdasd-->
+
+      #documents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttons {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .buttons:hover {
+    background-color: #0056b3;
+  }
+      
+
+      
     </style>
   </head>
   <body>
@@ -242,7 +270,7 @@
       <h2>Features</h2>
       <div class="features">
         <div class="feature-card">
-          <img src="feature1.png" alt="Product Recognition" />
+          <img src="recoginiton.png" alt="Product Recognition" />
           <h3>Product Recognition</h3>
           <p>
             This project aims to revolutionize the retail experience by
@@ -256,7 +284,7 @@
           </p>
         </div>
         <div class="feature-card">
-          <img src="feature2.png" alt="Price Comparison" />
+          <img src="price.png" alt="Price Comparison" />
           <h3>Price Comparison</h3>
           <p>
             With İProViS, the "Price Comparison" feature enables users to
@@ -269,7 +297,7 @@
           </p>
         </div>
         <div class="feature-card">
-          <img src="feature3.png" alt="Recyclability Information" />
+          <img src="recycle.png" alt="Recyclability Information" />
           <h3>Recyclability Information</h3>
           <p>
             The product is designed as a standalone mobile application
@@ -284,7 +312,7 @@
           </p>
         </div>
         <div class="feature-card">
-          <img src="feature4.png" alt="Multilingual Support" />
+          <img src="multilingual.png" alt="Multilingual Support" />
           <h3>Multilingual Support</h3>
           <p>
             İProViS’s Multilingual feature makes it easier for users across the
@@ -313,24 +341,26 @@
     </section>
 
     <section id="documents" class="container">
-      <div class="container" class="vertical-center">
+      <div class="container">
         <h2>Documents</h2>
         <p>Access the related project documents:</p>
-        <button
-          onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/Literature-Review-(LR)'"
-        >
-          Literature Review
-        </button>
-        <button
-          onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/Project-Work-Plan-(PWP)'"
-        >
-          Project Work Plan
-        </button>
-        <button
-          onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/SRS-Document'"
-        >
-          SRS Document
-        </button>
+        <div class="buttons-container">
+          <button class="buttons"
+            onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/Literature-Review-(LR)'"
+          >
+            Literature Review
+          </button>
+          <button class="buttons"
+            onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/Project-Work-Plan-(PWP)'"
+          >
+            Project Work Plan
+          </button>
+          <button class="buttons"
+            onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/SRS-Document'"
+          >
+            SRS Document
+          </button>
+        </div>
       </div>
     </section>
 
