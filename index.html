@@ -179,40 +179,53 @@
         color: #ffffff;
       }
 
-      <!--asdasdasd-->
-
       #documents {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin: 0 auto;
-  }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+      }
 
-  .buttons-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+      .buttons-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
 
-  .buttons {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
+      .buttons {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
 
-  .buttons:hover {
-    background-color: #0056b3;
-  }
-      
+      .buttons:hover {
+        background-color: #0056b3;
+      }
 
-      
+      /* Read More Styling */
+      .read-more {
+        color: #007bff;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 10px;
+      }
+
+      .read-more:hover {
+        text-decoration: underline;
+      }
+
+      .full-text {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -237,31 +250,34 @@
       <div class="container">
         <h2>About the Project</h2>
         <p>
-          iProViS (Intelligent Product Vision System) is an innovative solution
-          designed to revolutionize the way users interact with everyday
-          products. Leveraging advanced computer vision and artificial
-          intelligence, the application enables users to retrieve detailed
-          product information simply by taking a photo. Whether you’re shopping
-          in a supermarket, comparing prices online, or checking for
-          eco-friendly packaging, iProViS brings all the essential information
-          to your fingertips.
-        </p>
-        <p>
-          The app provides comprehensive details, including current prices,
-          stock availability, and price comparisons across multiple stores, both
-          online and offline. Additionally, iProViS promotes environmental
-          awareness by offering insights into the recyclability of products and
-          their packaging. With multilingual support, users from diverse
-          linguistic backgrounds can access product details seamlessly in their
-          preferred language.
-        </p>
-        <p>
-          By combining cutting-edge technology with user-friendly features,
-          iProViS enhances the shopping experience while contributing to
-          sustainable and eco-conscious consumption. Whether you are a savvy
-          shopper looking for the best deals or an environmentally conscious
-          user seeking greener alternatives, iProViS empowers you to make
-          informed decisions with ease and confidence.
+          <span class="short-text"
+            >iProViS (Intelligent Product Vision System) is an innovative
+            solution designed to revolutionize the way users interact with
+            everyday products...</span
+          >
+          <span class="full-text">
+            iProViS (Intelligent Product Vision System) is an innovative solution
+            designed to revolutionize the way users interact with everyday
+            products. Leveraging advanced computer vision and artificial
+            intelligence, the application enables users to retrieve detailed
+            product information simply by taking a photo. Whether you’re shopping
+            in a supermarket, comparing prices online, or checking for
+            eco-friendly packaging, iProViS brings all the essential information
+            to your fingertips. The app provides comprehensive details, including
+            current prices, stock availability, and price comparisons across
+            multiple stores, both online and offline. Additionally, iProViS
+            promotes environmental awareness by offering insights into the
+            recyclability of products and their packaging. With multilingual
+            support, users from diverse linguistic backgrounds can access product
+            details seamlessly in their preferred language. By combining
+            cutting-edge technology with user-friendly features, iProViS enhances
+            the shopping experience while contributing to sustainable and
+            eco-conscious consumption. Whether you are a savvy shopper looking
+            for the best deals or an environmentally conscious user seeking
+            greener alternatives, iProViS empowers you to make informed decisions
+            with ease and confidence.
+          </span>
+          <a href="#" class="read-more">Read More</a>
         </p>
       </div>
     </section>
@@ -273,58 +289,87 @@
           <img src="recoginiton.png" alt="Product Recognition" />
           <h3>Product Recognition</h3>
           <p>
-            This project aims to revolutionize the retail experience by
-            leveraging computer vision and deep learning technologies to replace
-            traditional barcodes and QR codes for product recognition in sectors
-            such as supermarkets, clothing, food, and electronics. The developed
-            system addresses multiple consumer needs, including effortless
-            access to product price information, comparative price analysis
-            across stores, and multilingual support for accessing detailed
-            product content information.
+            <span class="short-text"
+              >This project aims to revolutionize the retail experience by
+              leveraging computer vision and deep learning technologies...</span
+            >
+            <span class="full-text">
+              This project aims to revolutionize the retail experience by
+              leveraging computer vision and deep learning technologies to
+              replace traditional barcodes and QR codes for product recognition
+              in sectors such as supermarkets, clothing, food, and electronics.
+              The developed system addresses multiple consumer needs, including
+              effortless access to product price information, comparative price
+              analysis across stores, and multilingual support for accessing
+              detailed product content information.
+            </span>
+            <a href="#" class="read-more">Read More</a>
           </p>
         </div>
         <div class="feature-card">
           <img src="price.png" alt="Price Comparison" />
           <h3>Price Comparison</h3>
           <p>
-            With İProViS, the "Price Comparison" feature enables users to
-            compare product prices across sources in an easy way. Utilizing
-            computer vision, it can scan a product's barcode or analyze its
-            image for instant retrieval of pricing from online stores or
-            physical retailers. This feature allows users to find the best deals
-            to make their shopping fast and efficient. Users can now make
-            budget-friendly decisions using real-time price analysis.
+            <span class="short-text"
+              >With İProViS, the "Price Comparison" feature enables users to
+              compare product prices across sources in an easy way...</span
+            >
+            <span class="full-text">
+              With İProViS, the "Price Comparison" feature enables users to
+              compare product prices across sources in an easy way. Utilizing
+              computer vision, it can scan a product's barcode or analyze its
+              image for instant retrieval of pricing from online stores or
+              physical retailers. This feature allows users to find the best
+              deals to make their shopping fast and efficient. Users can now make
+              budget-friendly decisions using real-time price analysis.
+            </span>
+            <a href="#" class="read-more">Read More</a>
           </p>
         </div>
         <div class="feature-card">
           <img src="recycle.png" alt="Recyclability Information" />
           <h3>Recyclability Information</h3>
           <p>
-            The product is designed as a standalone mobile application
-            integrated with the iPRoVis system's API for advanced functionality.
-            This integration enables not only product identification but also
-            facilitates an intelligent recycling process by recognizing
-            recyclable packaging types, determining whether the packaging is
-            empty or full, and providing weight details. This functionality
-            ensures efficient sorting and recognition by smart recycling
-            machines, thereby reducing the time and effort required for waste
-            disposal and recycling.
+            <span class="short-text"
+              >The product is designed as a standalone mobile application
+              integrated with the iPRoVis system's API for advanced
+              functionality...</span
+            >
+            <span class="full-text">
+              The product is designed as a standalone mobile application
+              integrated with the iPRoVis system's API for advanced functionality.
+              This integration enables not only product identification but also
+              facilitates an intelligent recycling process by recognizing
+              recyclable packaging types, determining whether the packaging is
+              empty or full, and providing weight details. This functionality
+              ensures efficient sorting and recognition by smart recycling
+              machines, thereby reducing the time and effort required for waste
+              disposal and recycling.
+            </span>
+            <a href="#" class="read-more">Read More</a>
           </p>
         </div>
         <div class="feature-card">
           <img src="multilingual.png" alt="Multilingual Support" />
           <h3>Multilingual Support</h3>
           <p>
-            İProViS’s Multilingual feature makes it easier for users across the
-            globe as it provides support for more than one language. This
-            feature allows the software to read product details, labels, and
-            pricing in other languages employing state of the art computer
-            vision and natural language processing (NLP) technologies. Customers
-            can communicate with the application in their language of choice,
-            therefore improving the function and usefulness of the software.
-            Whether you’re purchasing items from a local store or ordering from
-            abroad, İProVis changes according to the languages you required,
-            hence it becomes a universal shopping assistant.
+            <span class="short-text"
+              >İProViS’s Multilingual feature makes it easier for users across
+              the globe as it provides support for more than one language...</span
+            >
+            <span class="full-text">
+              İProViS’s Multilingual feature makes it easier for users across the
+              globe as it provides support for more than one language. This
+              feature allows the software to read product details, labels, and
+              pricing in other languages employing state of the art computer
+              vision and natural language processing (NLP) technologies.
+              Customers can communicate with the application in their language of
+              choice, therefore improving the function and usefulness of the
+              software. Whether you’re purchasing items from a local store or
+              ordering from abroad, İProVis changes according to the languages
+              you required, hence it becomes a universal shopping assistant.
+            </span>
+            <a href="#" class="read-more">Read More</a>
           </p>
         </div>
       </div>
@@ -345,17 +390,20 @@
         <h2>Documents</h2>
         <p>Access the related project documents:</p>
         <div class="buttons-container">
-          <button class="buttons"
+          <button
+            class="buttons"
             onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/Literature-Review-(LR)'"
           >
             Literature Review
           </button>
-          <button class="buttons"
+          <button
+            class="buttons"
             onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/Project-Work-Plan-(PWP)'"
           >
             Project Work Plan
           </button>
-          <button class="buttons"
+          <button
+            class="buttons"
             onclick="window.location.href='https://github.com/CankayaUniversity/ceng-407-408-2024-2025-iProViS-Intelligent-Product-Vision-System/wiki/SRS-Document'"
           >
             SRS Document
@@ -393,5 +441,30 @@
         </p>
       </div>
     </footer>
+
+    <script>
+      // JavaScript for Read More functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const readMoreLinks = document.querySelectorAll(".read-more");
+
+        readMoreLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const shortText = this.previousElementSibling.previousElementSibling;
+            const fullText = this.previousElementSibling;
+
+            if (fullText.style.display === "none") {
+              fullText.style.display = "inline";
+              shortText.style.display = "none";
+              this.textContent = "Read Less";
+            } else {
+              fullText.style.display = "none";
+              shortText.style.display = "inline";
+              this.textContent = "Read More";
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
